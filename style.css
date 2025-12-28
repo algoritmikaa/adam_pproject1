@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header,
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to right,white,#4c6ef5,black);
+    color: white;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+main section {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#about h2,
+#features h2,
+#works h2,
+#useful-info h2,
+#contact h2 {
+    color: #4c6ef5;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#contact h2{
+    color:white;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.work-btn,
+.info-btn {
+    background-color: #4c6ef5;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    width: calc(33% - 1rem); 
+}
+
+.work-btn:hover,
+.info-btn:hover {
+    background-color: #3b5998;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 15px 0 rgb(37, 37, 70);
+
+}
+
+footer p {
+    font-size: 8px;
+}
+
+.gallery {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+}
+
+.debil {
+    opacity: 0.5;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.debil:hover {
+   opacity: 1;
+   border: 6px solid navy;
+   width: 170px;
+   height: 170px;
+   padding: 5px;
+   transition:all 0.5s ease-out;
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    main section {
+        padding: 1rem;
+    }
+
+    .btn-container > * {
+        width: 100%; 
+    }
+}
